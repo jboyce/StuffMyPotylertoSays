@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    for mp3Path in mp3Paths
+        a(href=mp3Path.href)= mp3Path.text
+        br

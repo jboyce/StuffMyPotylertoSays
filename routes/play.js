@@ -8,7 +8,6 @@ var Speaker = require("speaker");
 var speaker = new Speaker();
 
 exports.playBackSaying = function(request, response){
-    //res.render('index', { title: 'Express' });
     var getFullMp3PathFromRequest = function(request) {
         var name = querystring.unescape(request.url.substring(6));
         return path.join(common.audioPath, name);
