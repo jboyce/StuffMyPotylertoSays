@@ -3,6 +3,7 @@
     "description": "serves a single web page that displays links to play mp3 files from a given folder",
     "version": "1.0.0",
     "dependencies": {
+        "express": "3.4.4",
         "lame": ">= 1.0.3",
         "speaker": ">= 0.0.10"
     }
