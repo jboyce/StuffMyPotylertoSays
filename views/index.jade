@@ -1,6 +1,11 @@
 extends layout
 
 block content
-    for mp3Path in mp3Paths
-        a(href=mp3Path.href)= mp3Path.text
+    for key in keys
+        h1= key
+        for pathInfo in mp3Paths[key]
+            a(href=pathInfo.href)= pathInfo.text
+            br
+        br
+        br
         br
