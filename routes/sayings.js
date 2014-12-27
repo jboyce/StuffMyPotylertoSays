@@ -38,7 +38,7 @@ var getMp3PathInfos = function() {
     return pathMap;
 };
 
-exports.index = function(request, response){
+exports.sayings = function(request, response){
     var mp3PathInfos = getMp3PathInfos();
-    response.render('index', { keys: Object.getOwnPropertyNames(mp3PathInfos), mp3Paths : mp3PathInfos });
+    response.json(mp3PathInfos);
 };
